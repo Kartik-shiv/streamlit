@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 
-data=pd.read_csv("H:\MyLearning\ML\Regression\Task\multiplekaggledata.csv")
+data=pd.read_csv("multiplekaggledata.csv")
 
 dummy=pd.get_dummies(data,columns=["Neighborhood"])
 dummy_val=dummy.astype(int)

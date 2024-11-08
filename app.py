@@ -31,10 +31,13 @@ YearBuilt = st.sidebar.slider("Choose the year the house is Built:",1950,2021)
 
 if Neighborhood_input == "Rural":
     user_data = [SquareFeet, Bedrooms, Bathrooms, YearBuilt, 1, 0, 0]
+    st.image("rural.jpg")
 elif Neighborhood_input == "Suburb":
     user_data = [SquareFeet, Bedrooms, Bathrooms, YearBuilt, 0, 1, 0]
+    st.image('Suburb.jpg')
 elif Neighborhood_input == "Urban":
     user_data = [SquareFeet, Bedrooms, Bathrooms, YearBuilt, 0, 0, 1]
+    st.image('Urban.jpg')
 else:
     print("Neighborhood not found")
     exit()
